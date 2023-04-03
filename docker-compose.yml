@@ -9,9 +9,10 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: poijasdf
       MYSQL_DATABASE: jra-van
-      MYSQL_USER: root
+      MYSQL_USER: mysql
       MYSQL_PASSWORD: poijasdf
     ports:
       - "3316:3306"
     volumes:
       - ./mysql/db:/var/lib/mysql
+      - ./mysql/conf/my.cnf:/etc/mysql/conf.d/my.cnf
