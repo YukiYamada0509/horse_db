@@ -1,18 +1,19 @@
 version: '3.8'
 
 services:
-  db:
+  jra-van:
     image: mysql:8.0
-    container_name: jra_db
+    container_name: jra-van
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: poijasdf
       MYSQL_DATABASE: jra-van
       MYSQL_USER: mysql
       MYSQL_PASSWORD: poijasdf
+      MYSQL_ROOT_PASSWORD: poijasdf
     ports:
       - "3316:3306"
     volumes:
       - ./mysql/db:/var/lib/mysql
       - ./mysql/conf/my.cnf:/etc/mysql/conf.d/my.cnf
+
