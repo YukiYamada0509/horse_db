@@ -15,5 +15,5 @@ services:
       - "3316:3306"
     volumes:
       - ~/D/mysql/db:/var/lib/mysql
-      - ./mysql/conf/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ~/D/mysql/conf/my.cnf:/etc/mysql/conf.d/my.cnf
 
