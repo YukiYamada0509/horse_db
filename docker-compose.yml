@@ -13,6 +13,6 @@ services:
     ports:
       - "3316:3306"
     volumes:
-      - ~/D/mysql/db:/var/lib/mysql
-      - ~/D/mysql/conf/my.cnf:/etc/mysql/conf.d/my.cnf
+      - /mnt/SP128/mysql/db:/var/lib/mysql
+      - /mnt/SP128/mysql/conf/my.cnf:/etc/mysql/conf.d/my.cnf
 
