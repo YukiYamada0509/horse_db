@@ -7,9 +7,9 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
-      MYSQL_USER: mysql
-      MYSQL_PASSWORD: poijasdf
-      MYSQL_ROOT_PASSWORD: poijasdf
+      MYSQL_USER: raptor
+      MYSQL_PASSWORD: meltdown1986
+      MYSQL_ROOT_PASSWORD: Meltdown::!1986
     ports:
       - "3316:3306"
     volumes:
