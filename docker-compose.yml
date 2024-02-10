@@ -8,8 +8,8 @@ services:
     restart: always
     environment:
       MYSQL_USER: raptor
-      MYSQL_PASSWORD: meltdown1986
-      MYSQL_ROOT_PASSWORD: Meltdown::!1986
+      MYSQL_PASSWORD: poijasdf
+      MYSQL_ROOT_PASSWORD: poijasdf
     ports:
       - "3316:3306"
     volumes:
